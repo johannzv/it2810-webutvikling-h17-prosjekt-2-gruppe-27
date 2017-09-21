@@ -28,6 +28,17 @@ display:flex;
   align-items: center;
 }
 
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.h2{
+  margin: 40px;
+}
+
 .navigation-bar-list{
   list-style-type: none;
   display: flex;
