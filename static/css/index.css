@@ -13,6 +13,21 @@ display:flex;
 
 }
 
+
+.page{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .navigation-bar-list{
   list-style-type: none;
   display: flex;
