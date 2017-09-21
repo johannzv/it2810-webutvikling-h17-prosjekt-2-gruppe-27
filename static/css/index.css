@@ -39,14 +39,12 @@ html, body {
   justify-content: space-between;
 }
 
-
-.menu-list a span{
-  color: white;
-  font-size: 15px;
-  font-family: Helvetica Neue;
-  font-weight: normal;
+.menu-item a span{
+ color: white;
+ font-size: 15px;
+ font-family: Helvetica Neue;
+ font-weight: normal;
 }
-
 
 #navigationBarLiHamburger{
 
@@ -60,6 +58,25 @@ html, body {
 }
 
 /*Desktop mediaQuery*/
-@@media screen and (min-width:768px) {
+
+@media only screen
+and (min-width : 1024px) {
+  .navigation-bar{
+    flex-direction: row;
+  }
+
+
+  .menu-item{
+    margin: auto;
+  }
+
+
+
+  #navigavtionBarHome{
+    width: 10%;
+  }
+  #menuList{
+    flex-grow: 2;
+  }
 
 }
