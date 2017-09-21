@@ -1,51 +1,40 @@
 $(document).ready(function() {
-  //checking if it is mobile
-  var mobileApplied = false;
-  shouldChangeNavbar();
-
-  function isMobileWidth() {
-    return $('#mobile').is(':visible')
-  }
-  $(".navigation-bar-list-item span").on("mouseenter", function() {
-    $(this).css({
-      "color": "#ADADAD",
-      "cursor": "pointer"
-    })
-  }).on("mouseleave", function() {
-    $(this).css("color", "white")
+  //when clicking on hamburger menu should open
+  $(".menu-list").hide();
+  var menuClosed = true;
+  $("#navigationBarHamburger").on("click", function() {
+    if (menuClosed) {
+      $(this).attr("src", "img/cross.svg")
+      $(".navigation-bar").css({
+        "height": "100%"
+      })
+      $(".navigation-bar-list").css({
+        "margin-left":"auto",
+        "margin-right":"auto",
+        "margin-top":"0px",
+        "margin-bottom":"0px"
+      })
+      $(".menu-list").toggle()
+      menuClosed = false;
+    } else {
+      $(this).attr("src", "img/hamburger.svg")
+      $(".navigation-bar").css({
+        "height": "50px"
+      })
+      $(".menu-list").toggle()
+      menuClosed = true;
+    }
   })
 
-  //window can shrink, checking if the window is to small to fit desktop version
-  $(window).resize(function() {
-    shouldChangeNavbar()
-  });
+//when a menu item is hovered, it should change color
+  $(".menu-list span").on("mouseenter",function () {
+  $(this).css({
+    "color":"#ADADAD",
+    "cursor":"pointer"
+  })
+}).on("mouseleave", function(){
+  $(this).css("color","white")
+})
 
-  function shouldChangeNavbar() {
-    if (isMobileWidth()) {
-      if (mobileApplied) {
-        return;
-      }
-      applyMobile()
-    } else {
-      applyDesktop();
-    }
-  }
-
-  function applyMobile() {
-    //$(".navigation-bar-list-item").hide();
-    $("#nav-bar").removeClass("navigation-bar-desktop").addClass("navigation-bar-mobile");
-    $("#nav-bar-list").addClass("navigation-bar-list-mobile").removeClass("navigation-bar-list");
-    $("#nav-bar-list > li.navigation-bar-list-item").addClass("navigation-bar-list-item-mobile").removeClass("navigation-bar-list-item");
-
-    mobileApplied = true;
-  }
-
-  function applyDesktop() {
-    $(".navigation-bar-list-item").show();
-    $(".navigation-bar-list-item-menu").toggle();
-    $("#nav-bar").addClass("navigation-bar-desktop").removeClass("navigation-bar-mobile");
-
-    mobileApplied = false;
-  }
 
 })

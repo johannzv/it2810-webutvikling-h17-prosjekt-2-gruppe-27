@@ -6,55 +6,49 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/navigationBar.js"></script>
+
   <title>Page Title</title>
 </head>
 
 <body>
-  <div id="mobile">
 
-  </div>
 
 
 
   <!-- navbar -->
-  <nav class="navigation-bar-desktop" id="nav-bar">
-    <ul class="navigation-bar-list" id="nav-bar-list">
-      <li class="navigation-bar-list-item-menu">
-        <a>
-          <img id="menu-hamburger" src="img/cross.svg" width="18px" height="18px" />
-        </a>
+  <nav class="navigation-bar" id="navigationBar">
+    <ul class="navigation-bar-list">
+      <li "navigation-bar-list-item" id="navigationBarLiHamburger">
+        <img src="img/hamburger.svg" alt="menuIcon" width="18px" height="50px" id="navigationBarHamburger" />
       </li>
-      <li class="navigation-bar-list-item-menu">
-        <a>
-          <img id="menu-hamburger" src="img/hamburger.svg" width="18px" height="18px" />
-        </a>
+      <li class="navigation-bar-list-item" id="navigationBarLiHome">
+        <img src="img/logoNavbar.png" alt="Logo navbar" height="50px" width="70px" />
       </li>
-      <li class="navigation-bar-list-item-home">
-        <a>
-          <img src="img/logoNavbar.png" alt="Logo navbar" height="50" width="70">
-        </a>
-      </li>
-      <li class="navigation-bar-list-item">
+    </ul>
+    <ul class="menu-list" id="menuList">
+      <li class="menu-item" id="menuItemSnap">
         <a>
           <span>
           Snap
         </span>
         </a>
       </li>
-      <li class="navigation-bar-list-item">
+      <li class="menu-item" id="menuItemCrypto">
         <a>
           <span>
           Crypto
         </span>
         </a>
       </li>
-      <li class="navigation-bar-list-item">
-        <a><span>
+      <li class="menu-item" id="menuItemTwitter">
+        <a>
+          <span>
           Twitter
         </span>
         </a>
       </li>
     </ul>
+
   </nav>
 </body>
 
