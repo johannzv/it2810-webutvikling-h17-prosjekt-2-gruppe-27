@@ -3,6 +3,9 @@ $("#menuItemSnap").on("click", function () {
 	var h = $("#iPhone").height();
 	var w = $("#IPhone").width();
 	$("#snapopen").removeClass("hide");
+
+	// show text info
+	$("#infoHeader").text("Snap gir oss mye glede i hverdagen.")
 })
 
 var numClicked = 0;
