@@ -13,6 +13,16 @@ display:flex;
 
 }
 
+.hide{
+  display: none;
+}
+
+.placeInPhone{
+  position: absolute;
+  height: 280px;
+  padding-left: 96px;
+  padding-top: 36px;
+}
 
 .page{
   display: flex;
@@ -27,6 +37,10 @@ display:flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+}
+
+.phone{
+  display: flex;
 }
 
 .app_title{
