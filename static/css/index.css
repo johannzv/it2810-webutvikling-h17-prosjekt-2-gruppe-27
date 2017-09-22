@@ -115,8 +115,7 @@ html, body {
 
 /*Desktop mediaQuery*/
 
-@media only screen
-and (min-width : 1024px) {
+@media (min-width : 820px) {
   .navigation-bar{
     flex-direction: row;
   }
@@ -133,6 +132,10 @@ and (min-width : 1024px) {
   }
   #menuList{
     flex-grow: 2;
+  }
+
+  .content{
+    flex-direction: row;
   }
 
 }
