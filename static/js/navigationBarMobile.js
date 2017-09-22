@@ -4,7 +4,6 @@ $(document).ready(function() {
   shouldChangeLayout();
   function shouldChangeLayout() {
     if (window.matchMedia('(min-width: 1024px)').matches) {
-      console.log("called");
       if(!menuClosed){
         $("#navigationBarLiHamburger").hide();
         $(".navigation-bar").css({

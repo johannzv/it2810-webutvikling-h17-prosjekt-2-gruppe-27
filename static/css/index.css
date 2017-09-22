@@ -107,6 +107,21 @@ html, body {
   margin: auto;
 }
 
+.twitter-buttons{
+  background-color: white;
+border-color: #5AC8FA;
+border-style: solid;
+border-radius: 10px;
+border-width: thin;
+display: flex;
+  width: 380px;
+  height: 30px;
+   font-size: 16px;
+}
+
+.twitter-buttons span{
+  margin: auto;
+}
 /*Desktop mediaQuery*/
 
 @media (min-width : 820px) {
@@ -117,8 +132,6 @@ html, body {
   .menu-item{
     margin: auto;
   }
-
-
 
   #navigavtionBarHome{
     width: 10%;
