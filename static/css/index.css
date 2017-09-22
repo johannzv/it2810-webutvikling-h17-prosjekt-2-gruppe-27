@@ -1,14 +1,14 @@
 html, body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  padding: 0px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0px;
+
 }
 
 /**/
-
-.navigation-bar {
+.navigation-bar{
   padding: 0px;
   width: 100%;
   height: 50px;
@@ -36,7 +36,7 @@ html, body {
   height: 100%;
 }
 
-.content {
+.content{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@ html, body {
   }
 }
 
-.navigation-bar-list {
+.navigation-bar-list{
   height: 50px;
   width: 90%;
   margin: auto;
@@ -83,8 +83,7 @@ html, body {
   list-style-type: none;
   padding: 0px;
 }
-
-.menu-list {
+.menu-list{
   width: 90%;
   height: 80px;
   padding: 0px;
@@ -96,37 +95,43 @@ html, body {
   justify-content: space-between;
 }
 
-.menu-item a span {
-  color: white;
-  font-size: 15px;
-  font-family: Helvetica Neue;
-  font-weight: normal;
+.menu-item a span{
+ color: white;
+ font-size: 15px;
+ font-family: Helvetica Neue;
+ font-weight: normal;
 }
 
+#navigationBarLiHamburger{
 
-
-#navigationBarLiHome {
+}
+#navigationBarLiHome{
   flex-grow: 2;
   display: flex;
 }
-
-#navigationBarLiHome img {
+#navigationBarLiHome img{
   margin: auto;
 }
 
 /*Desktop mediaQuery*/
 
-@media only screen and (min-width: 1024px) {
-  .navigation-bar {
+@media only screen
+and (min-width : 1024px) {
+  .navigation-bar{
     flex-direction: row;
   }
-  .menu-item {
+
+  .menu-item{
     margin: auto;
   }
-  #navigavtionBarHome {
+
+
+
+  #navigavtionBarHome{
     width: 10%;
   }
-  #menuList {
+  #menuList{
     flex-grow: 2;
   }
+
 }
