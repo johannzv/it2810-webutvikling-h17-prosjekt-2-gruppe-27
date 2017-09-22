@@ -5,7 +5,9 @@ function getPrice() {
       if ( data != "ERROR" ) {
     	price = parseInt(data.USDT_BTC.last)
     }
+    $("#btc_price span").fadeOut()
     $("#btc_price span").text(price+" USD");
+    $("#btc_price span").fadeIn()
     }
   });
   setTimeout(getPrice, 5000); 
@@ -13,6 +15,6 @@ function getPrice() {
 
 $(document).ready(function() {
   // run the first time; all subsequent calls will take care of themselves every 5 seconds
-  getPrice()
-  setTimeout(getPrice, 5000);
+  getPrice();
+  // setTimeout(getPrice, 5000);
 });
