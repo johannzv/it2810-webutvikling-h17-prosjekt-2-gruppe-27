@@ -1,35 +1,82 @@
 html, body {
     margin: 0;
     height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0px;
 
 }
 
+/**/
 .navigation-bar{
-width: 100%;
-height: 50px;
-background-color: #333;
-display:flex;
-
-
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(51, 51, 51, 0.8);
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation-bar-list{
-  list-style-type: none;
+  height: 50px;
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  margin: auto;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0px;
+}
+.menu-list{
+  width: 90%;
+  height: 80px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  width: 70%;
-  align-items: center;
 }
 
-.navigation-bar-list-item, .navigation-bar-list-item-home {
+.menu-item a span{
+ color: white;
+ font-size: 15px;
+ font-family: Helvetica Neue;
+ font-weight: normal;
+}
+
+#navigationBarLiHamburger{
+
+}
+#navigationBarLiHome{
+  flex-grow: 2;
+  display: flex;
+}
+#navigationBarLiHome img{
   margin: auto;
 }
-.navigation-bar-list-item a span{
-  color: white;
-  font-size: 15px;
-  font-family: Helvetica Neue;
-  font-weight: normal;
+
+/*Desktop mediaQuery*/
+
+@media only screen
+and (min-width : 1024px) {
+  .navigation-bar{
+    flex-direction: row;
+  }
+
+
+  .menu-item{
+    margin: auto;
+  }
+
+
+
+  #navigavtionBarHome{
+    width: 10%;
+  }
+  #menuList{
+    flex-grow: 2;
+  }
+
 }
