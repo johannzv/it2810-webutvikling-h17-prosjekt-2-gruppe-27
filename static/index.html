@@ -4,6 +4,8 @@
 <head>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <!-- For some reason the tag below is neccessary for proper responsiveness -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/snap.css">
   <title>Page Title</title>
 </head>
@@ -49,26 +51,28 @@
   <div class="page"> 
     <div class="content">
       <div class="phone">
-        <img src="img/iphone.png" alt="iPhone" id="iPhone">
-        
-        <!-- snappictures -->
-        <img src="img/snap/snapopen.png" alt="snapopen" id="snapopen" class="hide placeInPhone">
-        <img src="img/snap/snap0p.png" alt="snap0p" id="snap0p" class="hide placeInPhone">
-        <img src="img/snap/snap1p.png" alt="snap1p" id="snap1p" class="hide placeInPhone">
-        <img src="img/snap/snap2p.png" alt="snap2p" id="snap2p" class="hide placeInPhone">
-        <img src="img/snap/snap3p.png" alt="snap3p" id="snap3p" class="hide placeInPhone">
-
+        <img src="../design/iphone.svg" alt="iPhone" id="iPhone">
+        <img src="../design/btc.jpg" alt="btc" id="btc_img" class="hide placeInPhone">
       </div>
-      <h2 id="infoHeader">
-        Information about the app
-      </h2>
+      <div class="app_description">
+          <div class="app_title">
+            <span>Bitcoin Ticker</span>
+          </div>
+          <div class="h2" id="info">
+
+          <span>Bitcoin Ticker lar deg sjekke oppdaterte priser på kryptovaluta som Bitcoin, Ethereum, Litecoin osv., samt få push-varsler ved endringer.</span>
+          </div>
+          <div class="h2" id="btc_price">
+            <span>     </span>
+          </div>
+      </div>
     </div>
-
   </div>
-
+        
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/navigationBarMobile.js"></script>
   <script src="js/snap.js"></script>
+  <script src="js/cryptoRequest.js"></script>
+  <script src="js/ticker.js"></script>
 </body>
-
 </html>
