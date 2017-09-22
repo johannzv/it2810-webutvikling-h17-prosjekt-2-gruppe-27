@@ -1,0 +1,14 @@
+.hide{
+	display: none;
+}
+
+.phone{
+	display: flex;
+}
+
+.placeInPhone{
+	position: absolute;
+	height: 280px;
+	padding-left: 96px;
+	padding-top: 36px;
+}
