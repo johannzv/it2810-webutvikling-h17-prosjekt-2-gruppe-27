@@ -1,0 +1,33 @@
+{
+  "name": "it2810-webutvikling-h17-prosjekt-2-gruppe-27",
+  "version": "1.0.0",
+  "description": "project 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel server -d build",
+    "server": "nodemon --watch server --exec babel-node  -- server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IT2810/it2810-webutvikling-h17-prosjekt-2-gruppe-27.git"
+  },
+  "keywords": [
+    "it2810"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IT2810/it2810-webutvikling-h17-prosjekt-2-gruppe-27/issues"
+  },
+  "homepage": "https://github.com/IT2810/it2810-webutvikling-h17-prosjekt-2-gruppe-27#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-core": "^6.25.0"
+  }
+}

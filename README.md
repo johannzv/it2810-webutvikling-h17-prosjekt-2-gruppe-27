@@ -1,1 +1,6 @@
-# it2810-webutvikling-h17-prosjekt-2-gruppe-27
+# Hvordan starte teste lokalt
+*clone repo
+*npm install
+*npm run server
+
+server skal da startes opp og lytte på port 8082
