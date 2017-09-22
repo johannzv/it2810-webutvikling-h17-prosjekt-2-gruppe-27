@@ -8,8 +8,8 @@ $("#menuItemSnap").on("click", function () {
         <img src="img/snap/snap2p.png" alt="snap2p" id="snap2p" class="hide placeInPhone">
         <img src="img/snap/snap3p.png" alt="snap3p" id="snap3p" class="hide placeInPhone">
 `)
-	$(".app_title").text("Snapchat");
-	$("#info").text("Snapchat gir oss mye glede i hverdagen");
+	$(".app_title").hide().text("Snapchat").slideDown();
+	$("#info").hide().text("Snapchat gir oss mye glede i hverdagen").fadeIn();
 	$("#btc_price").hide();
 	$("#snap_bar").show();
 	$("#crypto_bar").hide();

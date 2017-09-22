@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $(".app_title").hide().slideDown();
+  $(".app_description").hide().fadeIn();
     var menuClosed = true;
   //when clicking on hamburger menu should open
   shouldChangeLayout();
@@ -56,6 +58,37 @@ $( window ).resize(function() {shouldChangeLayout();})
       menuClosed = true;
     }
   })
+
+  $("#navigationBarLiHome").on("click", function () {
+  $("#crypto_bar").hide();
+  $("#snap_bar").hide();
+  $("#twitter_bar").hide();
+  $(".content").html(`<div class="phone">
+        <img src="img/iphone_start.svg" alt="iPhone" id="iPhone">
+        <!-- <img src="img/btc.jpg" alt="btc" id="img/btc_img" class="hide placeInPhone"> -->
+      </div>
+      <div class="app_description">
+        <div class="app_title">
+          <span>Apper</span>
+        </div>
+        <div class="h2" id="info">
+          <p>Vi er takknemlige for apper. Spesielt de 3 appene vi har valgt å vise fram her: Snapchat, Bitcoin Ticker og Twitter. Trykker på de respektive fanene over for å lese mer. </p>
+        </div>
+        <div class="h2 hide" id="btc_price">
+          <span>     </span>
+        </div>
+      </div>`);
+    $(".app_title").hide().slideDown();
+    $(".app_description").hide().fadeIn();
+    });
+
+
+
+
+
+
+
+
 
   //when a menu item is hovered, it should change color
   $("#menuList span").on("mouseenter", function() {

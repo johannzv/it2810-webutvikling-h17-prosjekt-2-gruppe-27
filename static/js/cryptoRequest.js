@@ -5,9 +5,9 @@ function getPrice() {
       if ( data != "ERROR" ) {
     	price = parseInt(data.USDT_BTC.last)
     }
-    $("#btc_price span").fadeOut()
+    $("#btc_price span").fadeOut();
     $("#btc_price span").text(price+" USD");
-    $("#btc_price span").fadeIn()
+    $("#btc_price span").fadeIn();
     }
   });
   setTimeout(getPrice, 5000); 

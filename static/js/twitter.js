@@ -3,7 +3,9 @@ $("#menuItemTwitter").on("click", function () {
   $(".phone").html(`
     <img src="../design/iphone.svg" alt="iPhone" id="iPhone">`);
   $("#twitter_image").removeClass("hide");
-  $(".app_title").text("Twitter");
+  $(".app_title").hide().text("Twitter").slideDown();
+  
+
   // Set the desired html inside of info
   $("#info").html(`<p>Twitter er en App jeg er svært takknemligfor. Her kan hvem som helst med en konto poste små meldinger på 140 tegn om alt og ingenting. En av mine favorittpersoner å følge er @realDonaldTrump, USAs president. Dette usminka Tweets rett fra levra.
             #MAGA </p>
@@ -24,6 +26,7 @@ $("#menuItemTwitter").on("click", function () {
           </ul>
 
     `);
+  $("#info").hide().fadeIn();
   // Hide the other stuff
   $("#btc_price").hide();
   $("#crypto_bar").hide();
@@ -66,20 +69,3 @@ $("#menuItemTwitter").on("click", function () {
     })
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
