@@ -16,6 +16,9 @@ $("#menuItemSnap").on("click", function () {
 	$(".app_title").text("Snapchat");
 	$("#info span").text("Snapchat gir oss mye glede i hverdagen");
 	$("#btc_price").hide();
+	$("#snap_bar").show();
+	$("#crypto_bar").hide();
+	$("#twitter_bar").hide();
 
 	// show text info
 	// $("#infoHeader").text("Snap gir oss mye glede i hverdagen.")

@@ -12,6 +12,9 @@ $("#menuItemCrypto").on("click", function () {
 	$(".app_title").text("Bitcoin Ticker");
 	$("#info span").text("Bitcoin Ticker lar deg sjekke oppdaterte priser på kryptovaluta som Bitcoin, Ethereum, Litecoin osv., samt få push-varsler ved endringer.");
 	$("#btc_price").show();
+	$("#crypto_bar").show();
+	$("#snap_bar").hide();
+	$("#twitter_bar").hide();
 
 	// show text info
 	// $("#infoHeader").text("Snap gir oss mye glede i hverdagen.")
