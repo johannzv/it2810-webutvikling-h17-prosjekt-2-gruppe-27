@@ -1,6 +1,6 @@
 $("#menuItemSnap").on("click", function () {
 	// show snap opening page
-	$(".phone").html(`<div class="phone">
+	$(".phone").html(`
     <img src="../design/iphone.svg" alt="iPhone" id="iPhone">
         
         <!-- snappictures -->
@@ -10,7 +10,7 @@ $("#menuItemSnap").on("click", function () {
         <img src="img/snap/snap2p.png" alt="snap2p" id="snap2p" class="hide placeInPhone">
         <img src="img/snap/snap3p.png" alt="snap3p" id="snap3p" class="hide placeInPhone">
 
-</div>
+
 `)
 	$("#snapopen").removeClass("hide");
 	$(".app_title").text("Snapchat");
