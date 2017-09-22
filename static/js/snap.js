@@ -1,15 +1,13 @@
 $("#menuItemSnap").on("click", function () {
 	// show snap opening page
 	$(".phone").html(`
-    <img src="../design/iphone.svg" alt="iPhone" id="iPhone">
+    <img src="img/snap/snap0p.png" alt="iPhone" id="iPhone">
         <!-- snappictures -->
-        <img src="img/snap/snapopen.png" alt="snapopen" id="snapopen" class="hide placeInPhone">
         <img src="img/snap/snap0p.png" alt="snap0p" id="snap0p" class="hide placeInPhone">
         <img src="img/snap/snap1p.png" alt="snap1p" id="snap1p" class="hide placeInPhone">
         <img src="img/snap/snap2p.png" alt="snap2p" id="snap2p" class="hide placeInPhone">
         <img src="img/snap/snap3p.png" alt="snap3p" id="snap3p" class="hide placeInPhone">
 `)
-	$("#snapopen").removeClass("hide");
 	$(".app_title").text("Snapchat");
 	$("#info").text("Snapchat gir oss mye glede i hverdagen");
 	$("#btc_price").hide();

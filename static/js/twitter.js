@@ -1,12 +1,7 @@
 $("#menuItemTwitter").on("click", function () {
   // Set iPhone screenshot image(s)
   $(".phone").html(`
-    <img src="../design/iphone.svg" alt="iPhone" id="iPhone">
-    <img src="../design/btc.jpg" alt="twitter" id="twitter_image" class="hide placeInPhone">
-        
-  
-
-`);
+    <img src="../design/iphone.svg" alt="iPhone" id="iPhone">`);
   $("#twitter_image").removeClass("hide");
   $(".app_title").text("Twitter");
   // Set the desired html inside of info
@@ -30,7 +25,7 @@ $("#menuItemTwitter").on("click", function () {
 
     `);
   // Hide the other stuff
-  $("#btc_price").remove();
+  $("#btc_price").hide();
   $("#crypto_bar").hide();
   $("#snap_bar").hide();
   $("#twitter_bar").show();
