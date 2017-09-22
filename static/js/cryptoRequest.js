@@ -4,7 +4,6 @@ $(document).ready((function() {
     if ( data != "ERROR" ) {
     	price = Number(data.USDT_BTC.last)
     }
-    alert(price)
 	})
 }));
 
