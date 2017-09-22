@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     padding: 0px;
 
 }
@@ -121,6 +121,28 @@ display: flex;
 
 .twitter-buttons span{
   margin: auto;
+}
+
+.twitterFeed{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.twitterItem{
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+
+}
+.twitterItem img{
+  width: 20%;
+  margin: auto;
+  padding: 5px;
+}
+.twitterItem div{
+  width: 80%;
 }
 /*Desktop mediaQuery*/
 
