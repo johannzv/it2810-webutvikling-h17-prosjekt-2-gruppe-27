@@ -65,13 +65,7 @@ html, body {
   margin: 40px;
 }
 
-/* Large screens */
-@media (min-width: 819px) {
-  .content {
 
-    flex-direction: row;
-  }
-}
 
 .navigation-bar-list{
   height: 50px;
@@ -115,8 +109,7 @@ html, body {
 
 /*Desktop mediaQuery*/
 
-@media only screen
-and (min-width : 1024px) {
+@media (min-width : 820px) {
   .navigation-bar{
     flex-direction: row;
   }
@@ -133,6 +126,10 @@ and (min-width : 1024px) {
   }
   #menuList{
     flex-grow: 2;
+  }
+
+  .content{
+    flex-direction: row;
   }
 
 }
