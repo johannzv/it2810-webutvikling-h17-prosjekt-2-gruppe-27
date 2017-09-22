@@ -22,8 +22,11 @@
   },
   "homepage": "https://github.com/IT2810/it2810-webutvikling-h17-prosjekt-2-gruppe-27#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "express": "^4.15.4",
-    "nodemon": "^1.12.1"
+    "lodash": "^4.17.4",
+    "nodemon": "^1.12.1",
+    "twit": "^2.2.9"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
