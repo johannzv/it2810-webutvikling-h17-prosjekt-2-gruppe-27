@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
     padding: 0px;
 
 }
@@ -16,6 +15,18 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+
+.bar {
+  background: tomato;
+  height: 0.25rem;
+  border: none;
+  width: 10%;
+  transition: .3s ease-in-out;
+  margin-top: 10px;
+  display: none;
+}
+
+/**/
 
 .hide{
   display: none;
@@ -65,6 +76,14 @@ html, body {
   margin: 40px;
 }
 
+.up{
+  color: green;
+}
+
+.down{
+  color: red;
+}
+
 
 
 .navigation-bar-list{
@@ -94,6 +113,13 @@ html, body {
  font-size: 15px;
  font-family: Helvetica Neue;
  font-weight: normal;
+ display: flex;
+ flex-direction: column;
+}
+
+.menu-item-container{
+  display: flex;
+  flex-direction: column;
 }
 
 #navigationBarLiHamburger{
@@ -107,6 +133,43 @@ html, body {
   margin: auto;
 }
 
+.twitter-buttons{
+  background-color: white;
+border-color: #5AC8FA;
+border-style: solid;
+border-radius: 10px;
+border-width: thin;
+display: flex;
+  width: 380px;
+  height: 30px;
+   font-size: 16px;
+}
+
+.twitter-buttons span{
+  margin: auto;
+}
+
+.twitterFeed{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.twitterItem{
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+
+}
+.twitterItem img{
+  width: 20%;
+  margin: auto;
+  padding: 5px;
+}
+.twitterItem div{
+  width: 80%;
+}
 /*Desktop mediaQuery*/
 
 @media (min-width : 820px) {
@@ -118,9 +181,11 @@ html, body {
     margin: auto;
   }
 
+  .bar{
+    width: 100%;
+  }
 
-
-  #navigavtionBarHome{
+  #navigationBarHome{
     width: 10%;
   }
   #menuList{
