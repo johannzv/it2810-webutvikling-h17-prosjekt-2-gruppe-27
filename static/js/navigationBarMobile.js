@@ -60,6 +60,7 @@ $( window ).resize(function() {shouldChangeLayout();})
   })
 
   $("#navigationBarLiHome").on("click", function () {
+    shouldChangeLayout();
   $("#crypto_bar").hide();
   $("#snap_bar").hide();
   $("#twitter_bar").hide();
@@ -106,4 +107,7 @@ $( window ).resize(function() {shouldChangeLayout();})
     })
   })
 
+$(".menu-item").on('click',function(){
+  shouldChangeLayout();
+})
 })
