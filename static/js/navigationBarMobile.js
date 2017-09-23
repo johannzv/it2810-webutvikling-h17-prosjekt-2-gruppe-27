@@ -64,7 +64,7 @@ $( window ).resize(function() {shouldChangeLayout();})
   $("#snap_bar").hide();
   $("#twitter_bar").hide();
   $(".content").html(`<div class="phone">
-        <img src="img/iphone_start.svg" alt="iPhone" id="iPhone">
+        <img src="img/home.png" alt="iPhone" id="iPhone">
         <!-- <img src="img/btc.jpg" alt="btc" id="img/btc_img" class="hide placeInPhone"> -->
       </div>
       <div class="app_description">
