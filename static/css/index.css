@@ -76,6 +76,14 @@ html, body {
   margin: 40px;
 }
 
+.up{
+  color: green;
+}
+
+.down{
+  color: red;
+}
+
 
 
 .navigation-bar-list{
