@@ -5,17 +5,13 @@ function getPrice(prev) {
       if ( data != "ERROR" ) {
     	price = parseInt(data.USDT_BTC.last)
     }
-
     if (prev != -1) {
       if (price > prev) {
-
-        $("btc_price span").css('color', 'green');
+        $("#tickerImg").attr('src', 'img/upTicker.svg');
       } else if (price < prev) {
-
-        $("btc_price span").css('color', 'red');
+        $("#tickerImg").attr('src', 'img/downTicker.svg');
       } else {
-
-        $("btc_price span").css('color', 'black');
+        $("#tickerImg").attr('src', 'img/neutralTicker.svg');
       }
     }
 

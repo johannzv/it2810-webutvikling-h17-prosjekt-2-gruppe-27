@@ -104,9 +104,6 @@ html, body {
   margin-top: 50px;
 }
 
-#menuItemDoc span{
-  color: tomato;
-}
 
 .documentation{
   display: flex;
