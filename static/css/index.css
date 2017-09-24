@@ -93,6 +93,26 @@ html, body {
   color: red;
 }
 
+.btc_price_container{
+  display: flex;
+  flex-direction: row;
+}
+
+#tickerImg{
+  width: 1rem;
+  height: 1rem;
+  margin-top: 50px;
+}
+
+#menuItemDoc span{
+  color: tomato;
+}
+
+.documentation{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
 
 
 .navigation-bar-list{
