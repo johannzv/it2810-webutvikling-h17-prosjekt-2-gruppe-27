@@ -5,7 +5,7 @@ $(document).ready(function() {
   //when clicking on hamburger menu should open
   shouldChangeLayout();
   function shouldChangeLayout() {
-    if (window.matchMedia('(min-width: 1024px)').matches) {
+    if (window.matchMedia('(min-width: 820px)').matches) {
       if(!menuClosed){
         $("#navigationBarLiHamburger").hide();
         $(".navigation-bar").css({
@@ -82,14 +82,6 @@ $( window ).resize(function() {shouldChangeLayout();})
     $(".app_title").hide().slideDown();
     $(".app_description").hide().fadeIn();
     });
-
-
-
-
-
-
-
-
 
   //when a menu item is hovered, it should change color
   $("#menuList span").on("mouseenter", function() {

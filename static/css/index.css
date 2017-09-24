@@ -80,6 +80,11 @@ html, body {
   margin: 40px;
 }
 
+#btc_price{
+  font-size: 2em;
+
+}
+
 .up{
   color: green;
 }
