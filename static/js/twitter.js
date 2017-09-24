@@ -7,32 +7,17 @@ $("#menuItemTwitter").on("click", function () {
 
 
   // Set the desired html inside of info
-  $("#info").html(`<p>
-    Twitter er en App jeg er svært takknemlig for. Her kan hvem som helst med en konto poste små meldinger på 140 tegn om alt og ingenting. En av mine favorittpersoner å følge er @realDonaldTrump, USAs president. Dette usminka Tweets rett fra levra. #MAGA
-    </p>
-          <p>
-          Jeg anbefaler selvfølgelig alle å følge @realDonalTrump på Twitter. Om du allerede ikke har fått oppleve denne store Twitter-profilen skal jeg gi deg en smakebit her.
-          </p>
-          <div id="getTwitterFeed" class="twitter-buttons">
-            <span>
-            Hent tweets fra Trump
-          </span>
-          </div>
-          <div id="refreshTwitterFeed" class="twitter-buttons">
-            <span>
-            Oppdater
-          </span>
-          </div>
-          <ul class="twitterFeed" id="twitterFeed">
-          </ul>
+  $(".content").load('twitter.html', function () {
+    $(".app_title").hide().slideDown();
+    $("#info").hide().fadeIn();
+    // Hide the other stuff
+    $(".btc_price_container").hide();
+    $("#crypto_bar").hide();
+    $("#snap_bar").hide();
+    $("#twitter_bar").show();
+    $("#doc_bar").hide();
 
-    `);
-  $("#info").hide().fadeIn();
-  // Hide the other stuff
-  $(".btc_price_container").hide();
-  $("#crypto_bar").hide();
-  $("#snap_bar").hide();
-  $("#twitter_bar").show();
+  
 
 
 
@@ -47,7 +32,10 @@ $("#menuItemTwitter").on("click", function () {
       $(this).css("background-color", "white")
     })
 
-  $("#getTwitterFeed, #refreshTwitterFeed").click(function() {
+  $("#getTwitterFeed, #refreshTwitterFeed").click(getTwitterFeed());
+
+
+  function getTwitterFeed() {
     if (this.id== "getTwitterFeed"){
       $("#getTwitterFeed").toggle();
       $("#refreshTwitterFeed").toggle();
@@ -68,5 +56,5 @@ $("#menuItemTwitter").on("click", function () {
           </li>`)
         })
     })
-  });
+  }
 });
