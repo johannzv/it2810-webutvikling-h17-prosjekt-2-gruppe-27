@@ -5,19 +5,16 @@ function getPrice(prev) {
       if ( data != "ERROR" ) {
     	price = parseInt(data.USDT_BTC.last)
     }
-    console.log("prev");
-    console.log(prev);
-    console.log("price");
-    console.log(price);
+
     if (prev != -1) {
       if (price > prev) {
-        console.log("In higher");
+      
         $("btc_price span").css('color', 'green');
       } else if (price < prev) {
-        console.log("In lower");
+
         $("btc_price span").css('color', 'red');
       } else {
-        console.log("In either");
+
         $("btc_price span").css('color', 'black');
       }
     }
@@ -27,7 +24,7 @@ function getPrice(prev) {
     setTimeout(getPrice, 5000, price);
     }
   });
-   
+
 }
 
 $(document).ready(function() {
