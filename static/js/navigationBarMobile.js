@@ -1,7 +1,9 @@
 $(document).ready(function() {
-  $(".app_title").hide().slideDown();
-  $(".app_description").hide().fadeIn();
-  $(".btc_price_container").hide();
+  $(".content").load('frontpage.html', function () {
+    $(".app_title").hide().slideDown();
+    $(".app_description").hide().fadeIn();
+    $(".btc_price_container").hide();
+    });
     var menuClosed = true;
   //when clicking on hamburger menu should open
   shouldChangeLayout();

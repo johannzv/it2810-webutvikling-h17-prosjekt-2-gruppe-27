@@ -10,10 +10,5 @@ $("#menuItemCrypto").on("click", function () {
 		$("#snap_bar").hide();
 		$("#twitter_bar").hide();
 		$("#doc_bar").hide();
-
 	});
-
-		
-
-
 })
