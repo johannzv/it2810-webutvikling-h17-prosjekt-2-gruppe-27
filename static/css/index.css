@@ -104,6 +104,15 @@ html, body {
   margin-top: 50px;
 }
 
+#menuItemDoc span{
+  color: tomato;
+}
+
+.documentation{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
 
 
 .navigation-bar-list{
