@@ -1,3 +1,5 @@
+var numClicked = 4;
+
 $("#menuItemSnap").on("click", function () {
 	
 	// show snap opening page
@@ -8,24 +10,17 @@ $("#menuItemSnap").on("click", function () {
 		$("#snap_bar").show();
 		$("#crypto_bar").hide();
 		$("#twitter_bar").hide();
+		numClicked = 0;
 	})
 })
 
 
-var numClicked = 0;
-$(".placeInPhone").on("click", function () {
-	// Changing snap photo as a person clicks on takePhoto div
-	if (numClicked == 0)
+$("#iPhone").on("click", function () {
+	// Changing snap photo as a person clicks on takePhoto 
+	if (numClicked < 4)
 	{
-		var idshow = "#snap" + numClicked + "p";
-		$(idshow).removeClass("hide");
-		++numClicked
-	}
-	else if (numClicked < 4)
-	{
-		var idhide = "#snap" + numClicked + "p";
-		var idshow = "#snap" + numClicked++ + "p";
-		$(idhide).addClass("hide");
-		$(idshow).removeClass("hide");
+		var img = "img/snap/snap" + numClicked + "p.svg";
+		$(this).attr("src", img);
+		++numClicked;
 	}
 })
