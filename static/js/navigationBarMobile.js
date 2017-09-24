@@ -95,7 +95,7 @@ $( window ).resize(function() {shouldChangeLayout();})
       "cursor": "pointer"
     })
   }).on("mouseleave", function() {
-    $(this).css("color", "white")
+    $(this).css("color", "white");
   })
 
   $("#navigationBarHamburger, #homeLogo").on("mouseenter", function() {
