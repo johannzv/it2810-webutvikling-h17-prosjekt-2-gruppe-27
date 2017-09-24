@@ -3,7 +3,6 @@ let port = 8082
 import express from 'express'
 import path from 'path'
 import credentials from './credentials'
-import axios from 'axios'
 import Twit from 'twit'
 import _ from 'lodash'
 var T = new Twit({
