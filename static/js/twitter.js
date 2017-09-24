@@ -13,6 +13,8 @@ $("#menuItemTwitter").on("click", function () {
     $("#crypto_bar").hide();
     $("#snap_bar").hide();
     $("#twitter_bar").show();
+    $("#doc_bar").hide();
+
   
 
 

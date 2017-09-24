@@ -9,6 +9,8 @@ $("#menuItemCrypto").on("click", function () {
 		$("#crypto_bar").show();
 		$("#snap_bar").hide();
 		$("#twitter_bar").hide();
+		$("#doc_bar").hide();
+
 	});
 
 		
