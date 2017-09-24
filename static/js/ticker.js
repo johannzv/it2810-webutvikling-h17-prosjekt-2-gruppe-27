@@ -6,7 +6,7 @@ $("#menuItemCrypto").on("click", function () {
 	$("#btc_image").removeClass("hide");
 	$(".app_title").hide().text("Bitcoin Ticker").slideDown();
 	$("#info").hide().text("Bitcoin Ticker lar deg sjekke oppdaterte priser på kryptovaluta som Bitcoin, Ethereum, Litecoin osv., samt få push-varsler ved endringer.").fadeIn();
-	$("#btc_price").slideDown();
+	$(".btc_price_container").slideDown();
 	$("#crypto_bar").show();
 	$("#snap_bar").hide();
 	$("#twitter_bar").hide();

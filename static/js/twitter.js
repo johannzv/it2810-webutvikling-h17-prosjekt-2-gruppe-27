@@ -29,7 +29,7 @@ $("#menuItemTwitter").on("click", function () {
     `);
   $("#info").hide().fadeIn();
   // Hide the other stuff
-  $("#btc_price").hide();
+  $(".btc_price_container").hide();
   $("#crypto_bar").hide();
   $("#snap_bar").hide();
   $("#twitter_bar").show();

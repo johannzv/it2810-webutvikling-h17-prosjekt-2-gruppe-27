@@ -12,18 +12,18 @@ function getPrice(prev) {
     if (prev != -1) {
       if (price > prev) {
         console.log("In higher");
-        $("btc_price span").css('color', 'green');
+        $("#tickerImg").attr('src', 'img/upTicker.svg');
       } else if (price < prev) {
         console.log("In lower");
-        $("btc_price span").css('color', 'red');
+        $("#tickerImg").attr('src', 'img/downTicker.svg');
       } else {
         console.log("In either");
-        $("btc_price span").css('color', 'black');
+        $("#tickerImg").attr('src', 'img/neutralTicker.svg');
       }
     }
-    $("#btc_price span").fadeOut();
-    $("#btc_price span").text(price+" USD");
-    $("#btc_price span").fadeIn();
+
+    $("#btc_price span").fadeOut().text(price+" USD").fadeIn()
+    $("#tickerImg").fadeOut().fadeIn();
     setTimeout(getPrice, 5000, price);
     }
   });
