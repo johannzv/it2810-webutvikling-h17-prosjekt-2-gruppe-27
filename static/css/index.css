@@ -199,6 +199,11 @@ display: flex;
 .twitterItem div{
   width: 80%;
 }
+
+.disclaimer{
+  font-style: italic;
+  font-size: 12px;
+}
 /*Desktop mediaQuery*/
 
 @media (min-width : 820px) {
