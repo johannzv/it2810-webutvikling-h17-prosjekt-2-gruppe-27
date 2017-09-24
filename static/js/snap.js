@@ -2,7 +2,6 @@ var numClicked = 4;
 
 $("#menuItemSnap").on("click", function () {
 	numClicked = 0;
-	console.log("numClicked: " + numClicked);
 	$("#iPhone").attr("src", "img/snap/snapopen.svg");
 	$(".app_description").load('snap.html #snapInfo').fadeIn(1000);
 	$("#btc_price").hide();
