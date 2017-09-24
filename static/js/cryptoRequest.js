@@ -20,7 +20,7 @@ function getPrice(prev) {
     setTimeout(getPrice, 5000, price);
     }
   });
-   
+
 }
 
 $(document).ready(function() {

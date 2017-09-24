@@ -6,31 +6,112 @@
     <h2>Krav 1<h2>
   </div>
   <div>
-    <p>Hvordan vi løser krav 1</p>
-      <ul>
-        <li>Kanskje med noen</li>
-        <li>Punkter</li>
-      </ul>
+<p>
+  I dette prosjektet har vi brukt Node og express på serversiden. I tillegg har vi brukt transpilleren Babel og dev-verktøyet Nodemon.
+Babel har vi brukt slik at vi kan skrive i ES6. Konfigurasjonen for dette finnes under .babelrc og i package.json.
+Nodemon har vi brukt under utvikling så man slipper å starte serveren ved kræsj.  Nodemon har også oversikt over hvilket files som er blitt oppdatert, og starter dermed serveren på nytt ved endring.
+</p>
+<p>
+  Serverkoden er dokumentert linje for linje i bildet under.
+
+</p>
+
+<img src="img/serverCode.png" width="100%"/>
+<p class=disclaimer>
+  *Ettersom det ikke var lov til å bruke noen ferdigbygde ui-elementer er det importert som et bilde. Vi fullt klar over at dette ikke vises spesielt godt på mobil, men ettersom det tar lang tid å skulle lage egen highlighting, ble denne løsningen valgt
+</p>
   </div>
+
   <div>
     <h2>Krav 2<h2>
   </div>
   <div>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <ul>
-        <li>Kanskje med noen</li>
-        <li>Punkter</li>
-      </ul>
+    <p>Prosjektet vårt finnes her  <a href="http://it2810-27.idi.ntnu.no:8082"> http://it2810-27.idi.ntnu.no:8082</a>.</p>
   </div>
 
   <div>
     <h2>Krav 3<h2>
   </div>
-    <p>Hvordan vi løser krav 3</p>
+  <div>
+    <p>Vi har brukt CSS Flexible Box Layout Module på de fleste av våre elementer. Menyen er flex-direction: row, mens .content er flex-direction:column.
+</p>
+  </div>
+
+  <div>
+    <h2>Krav 4<h2>
+  </div>
+  <div>
+    <p>
+      Navigasjonsbaren er implementert fra bunn og html-delen for denne finnes i øverste del av body i static/index.html, css-delen finnes i static/css/index.css og ‘jQuery og js’-delen finnes i static/js/navigationBarMobile.js. Ytterligere kommentarer finnes i filene.
+    </p>
+  </div>
+
+  <div>
+    <h2>Krav 5<h2>
+  </div>
+  <div>
+    <p>
+    Ajax-funksjonalitet er brukt for å hente inn tweets fra @realDonaldTrump (Tweeter APIet) og for å hente i Bitcoin-prisen (Poloniex API)</p>
+  </div>
+
+  <div>
+    <h2>Krav 6<h2>
+  </div>
+  <div>
+    <p>
+      Fra jQuery, har vi kun brukt basis-biblioteket
       <ul>
-        <li>Kanskje med noen</li>
-        <li>Punkter</li>
+        <li>
+          static/js/jquery-3.2.1.min.js
+        </li>
+        <li>
+          vi har brukt events ved funksjonen .on(“click”, function () {});. Vi har brukt selektorer, inkludert ‘this’ selektoren. Vi har brukt flere av de innbyggde funksjonene, deriblant $(“selector”).fadeIn().
+        </li>
+
       </ul>
+  </p>
+  </div>
+
+  <div>
+    <h2>Krav 7<h2>
+  </div>
+  <div>
+    <p>
+      Web-siden har responsive web design og tilpasser seg skjermer/enheter av forskjellig størrelse ved bruk av display:flex; i .css-filene og @media queries.
+  </p>
+  </div>
+  <div>
+    <h2>Krav 8<h2>
+  </div>
+  <div>
+    <p>
+  Alle medlemmene i gruppa skal ha bidratt med kode, design, testing etc. Teammedlemene har hatt følgende oppgaver:
+<ul>
+  <li>
+    hovedside: Johannes, Marius
+  </li>
+  <li>
+    Snap: Isak
+  </li>
+  <li>
+    Twitter: Johannes
+  </li>
+  <li>
+    Bitcoin: Marius
+  </li>
+  <li>
+    Navbar: Johannes
+  </li>
+</ul>
+</p>
+  </div>
+
+  <div>
+    <h2>Krav 9<h2>
+  </div>
+    <p>Hvert medlem har brukt rundt 30 timer på prosjektet, derav 10 er opplæringsvideo som er sett sammen, og 20 timer har gåttt ned i implementerings tid for hver enkelt.
+    </p>
+
   </div>
   </div>
 </div>
