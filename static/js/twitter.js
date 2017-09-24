@@ -1,16 +1,17 @@
 $("#menuItemTwitter").on("click", function () {
   // Set iPhone screenshot image(s)
   $(".phone").html(`
-    <img src="../design/iphone.svg" alt="iPhone" id="iPhone">`);
+    <img src="img/twitterIphone.png" alt="iPhone" id="iPhone">`);
   $("#twitter_image").removeClass("hide");
   $(".app_title").hide().text("Twitter").slideDown();
-  
+
 
   // Set the desired html inside of info
-  $("#info").html(`<p>Twitter er en App jeg er svært takknemligfor. Her kan hvem som helst med en konto poste små meldinger på 140 tegn om alt og ingenting. En av mine favorittpersoner å følge er @realDonaldTrump, USAs president. Dette usminka Tweets rett fra levra.
-            #MAGA </p>
+  $("#info").html(`<p>
+    Twitter er en App jeg er svært takknemlig for. Her kan hvem som helst med en konto poste små meldinger på 140 tegn om alt og ingenting. En av mine favorittpersoner å følge er @realDonaldTrump, USAs president. Dette usminka Tweets rett fra levra. #MAGA
+    </p>
           <p>
-            Jeg anbefaler selvfølgelig alle å følge @realDonalTrump på Twitter. Om du allerde ikke har fått oppleve denne store Twitter-profilen skal jeg gi deg en smake bit her.
+          Jeg anbefaler selvfølgelig alle å følge @realDonalTrump på Twitter. Om du allerede ikke har fått oppleve denne store Twitter-profilen skal jeg gi deg en smakebit her.
           </p>
           <div id="getTwitterFeed" class="twitter-buttons">
             <span>
@@ -57,7 +58,7 @@ $("#menuItemTwitter").on("click", function () {
       $.each(tweets, function(index, value){
         $("#twitterFeed").append(`
           <li class="twitterItem" id="tweetItem${index}">
-            <img src="img/president.svg" width="50px" height="50px" />
+            <img src="img/trumpFace.png" width="70px" height="70px" />
             <div>
               <h5> <span>Donald J. Trump </span> @realDonaldTrump </h5>
               <p>

@@ -1,4 +1,5 @@
 $("#menuItemSnap").on("click", function () {
+	
 	// show snap opening page
 	$(".phone").html(`
     <img src="img/snap/snap0p.png" alt="iPhone" id="iPhone">

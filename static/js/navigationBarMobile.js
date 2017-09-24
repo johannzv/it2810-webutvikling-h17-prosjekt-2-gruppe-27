@@ -60,11 +60,12 @@ $( window ).resize(function() {shouldChangeLayout();})
   })
 
   $("#navigationBarLiHome").on("click", function () {
+    shouldChangeLayout();
   $("#crypto_bar").hide();
   $("#snap_bar").hide();
   $("#twitter_bar").hide();
   $(".content").html(`<div class="phone">
-        <img src="img/iphone_start.svg" alt="iPhone" id="iPhone">
+        <img src="img/home.png" alt="iPhone" id="iPhone">
         <!-- <img src="img/btc.jpg" alt="btc" id="img/btc_img" class="hide placeInPhone"> -->
       </div>
       <div class="app_description">
@@ -106,4 +107,7 @@ $( window ).resize(function() {shouldChangeLayout();})
     })
   })
 
+$(".menu-item").on('click',function(){
+  shouldChangeLayout();
+})
 })
