@@ -15,7 +15,7 @@ Importere twitter-nøkler. Disse er lagt i egen fil¢ av sikkerhetsmessige årsa
 Disse er også kopiert til den virtuelle serveren, men lagt til .gitignore så de
 ikke blir offentliggjort.
 */
-import credentials from './credentials'
+import credentials from './../credentials.json'
 
 //Lager en instans av Twit
 var T = new Twit({
